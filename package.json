@@ -1,9 +1,9 @@
 {
   "name": "vsc_automation",
   "version": "1.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "prepare": "husky",
+    "test": "jest",
     "lint": "eslint .",
     "format": "prettier . --write"
   },
@@ -12,6 +12,7 @@
     "eslint": "^10.0.3",
     "globals": "^17.4.0",
     "husky": "^9.1.7",
+    "jest": "^30.3.0",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.1"
   },
@@ -20,5 +21,9 @@
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "axios": "^1.14.0",
+    "dotenv": "^17.3.1"
   }
 }
